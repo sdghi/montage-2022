@@ -84,6 +84,7 @@
 				--video-height: 208.05px;
 				--video-width: 374.86px;
 				--social-margin: 73px;
+				--font-size: 16px;
 			}
 
 			.feature__content {
@@ -118,7 +119,7 @@
 			.feature__content__social__label {
 				margin: 0;
 				padding-right: 29px;
-				font-size: 8px;
+				font-size: var(--font-size);
 				letter-spacing: 0.08em;
 				line-height: 1;
 				text-transform: uppercase;
@@ -161,21 +162,23 @@
 				}
 			}
 
-			@media (min-width: 1440px) {
-				.feature {
-					--video-width: 820px;
-				}
-			}
-
 			@media (min-width: 1280px) {
 				.feature {
 					--social-margin: 50px;
 					--container-max-width: 216px;
 					--container-top: 57px;
 					--container-bottom: 15vh;
+					--font-size: 9px;
 				}
 			}
-			/* change da feature content margins according to XD */
+
+			@media (min-width: 1440px) {
+				.feature {
+					--video-width: 820px;
+					--font-size: 11px;
+				}
+			}
+
 			@media (min-width: 1920px) {
 				.feature {
 					--social-margin: 66px;
@@ -184,6 +187,7 @@
 					--container-bottom: 86px;
 					--video-height: 591px;
 					--video-width: 1049px;
+					--font-size: 15px;
 				}
 			}
 		</style>
