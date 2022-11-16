@@ -79,7 +79,7 @@
 
 			.feature {
 				--container-max-width: 277px;
-				--container-top: 84px;
+				--container-top: 80px;
 				--container-bottom: 95px;
 				--video-height: 208.05px;
 				--video-width: 374.86px;
@@ -151,20 +151,25 @@
 			}
 
 			@media (min-width: 1024px) {
-
+				/* .background {
+					--bg-height:;
+				} */
 				.feature {
-					--container-top: 121px;
-					--container-bottom: 104px;
+					--container-top: 101px;
+					--container-bottom: 200px;
 					--video-height: 437px;
 					--video-width: 777px;
 				}
 			}
 
 			@media (min-width: 1280px) {
+				/* .background {
+					position: absolute;
+				} */
 				.feature {
 					--container-max-width: 216px;
 					--container-top: 56px;
-					--container-bottom: 66px;
+					--container-bottom: 200px;
 				}
 			}
 
@@ -182,10 +187,6 @@
 	<body>
 		<main>
 			<picture class="background">
-				<source media="(min-width: 1920px)" srcset="./assets/leaves-illustration.svg" />
-				<source media="(min-width: 1280px)" srcset="./assets/1280.jpg" />
-				<source media="(min-width: 1024px)" srcset="./assets/1024.jpg" />
-				<source media="(min-width: 758px)" srcset="./assets/834.jpg" />
 				<img
 					class="background__image"
 					src="./assets/leaves-illustration.svg"
