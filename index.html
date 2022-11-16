@@ -83,6 +83,7 @@
 				--container-bottom: 95px;
 				--video-height: 208.05px;
 				--video-width: 374.86px;
+				--social-margin: 73px;
 			}
 
 			.feature__content {
@@ -109,7 +110,7 @@
 			}
 
 			.feature__content__social {
-				margin-top: 51px;
+				margin-top: var(--social-margin);
 				display: flex;
 				align-items: center;
 			}
@@ -144,37 +145,40 @@
 				.feature {
 					--container-max-width: 337px;
 					--container-top: 101px;
-					--container-bottom: 104px;
+					--container-bottom: 101px;
 					--video-height: 401px;
 					--video-width: 713px;
 				}
 			}
 
 			@media (min-width: 1024px) {
-				/* .background {
-					--bg-height:;
-				} */
 				.feature {
-					--container-top: 101px;
-					--container-bottom: 200px;
+					--social-margin: 85px;
+					--container-top: 118px;
+					--container-bottom: 118px;
 					--video-height: 437px;
 					--video-width: 777px;
 				}
 			}
 
-			@media (min-width: 1280px) {
-				/* .background {
-					position: absolute;
-				} */
+			@media (min-width: 1440px) {
 				.feature {
+					--video-width: 820px;
+				}
+			}
+
+			@media (min-width: 1280px) {
+				.feature {
+					--social-margin: 50px;
 					--container-max-width: 216px;
-					--container-top: 56px;
-					--container-bottom: 200px;
+					--container-top: 57px;
+					--container-bottom: 15vh;
 				}
 			}
 			/* change da feature content margins according to XD */
 			@media (min-width: 1920px) {
 				.feature {
+					--social-margin: 66px;
 					--container-max-width: 292px;
 					--container-top: 76px;
 					--container-bottom: 86px;
