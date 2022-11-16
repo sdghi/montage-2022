@@ -12,7 +12,7 @@
 		<style>
 			body {
 				--color-main: #9a865a;
-				--color-bg: #ffffff;
+				--color-bg: #0B1A14;
 				--ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
 				--entry-animation: fade 1s var(--ease-out-quint) both,
 					slideUp 0.8s var(--ease-out-quint) both;
@@ -61,7 +61,7 @@
 			}
 
 			.background {
-				--bg-height: 376px;
+				--bg-height: 330px;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -141,9 +141,6 @@
 			}
 
 			@media (min-width: 768px) {
-				.background {
-					--bg-height: 533px;
-				}
 				.feature {
 					--container-max-width: 337px;
 					--container-top: 101px;
@@ -154,9 +151,6 @@
 			}
 
 			@media (min-width: 1024px) {
-				.background {
-					--bg-height: 683px;
-				}
 
 				.feature {
 					--container-top: 121px;
@@ -167,10 +161,6 @@
 			}
 
 			@media (min-width: 1280px) {
-				.background {
-					--bg-height: 406px;
-				}
-
 				.feature {
 					--container-max-width: 216px;
 					--container-top: 56px;
@@ -192,13 +182,13 @@
 	<body>
 		<main>
 			<picture class="background">
-				<source media="(min-width: 1920px)" srcset="./assets/1920.jpg" />
+				<source media="(min-width: 1920px)" srcset="./assets/leaves-illustration.svg" />
 				<source media="(min-width: 1280px)" srcset="./assets/1280.jpg" />
 				<source media="(min-width: 1024px)" srcset="./assets/1024.jpg" />
 				<source media="(min-width: 758px)" srcset="./assets/834.jpg" />
 				<img
 					class="background__image"
-					src="./assets/375.jpg"
+					src="./assets/leaves-illustration.svg"
 					role="presentation"
 				/>
 			</picture>
